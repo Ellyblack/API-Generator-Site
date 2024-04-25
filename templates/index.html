@@ -1,0 +1,40 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hello!</title>
+    <meta name="description" content="description"/>
+    <meta name="author" content="author" />
+    <meta name="keywords" content="keywords" />
+    <link rel="stylesheet" href="{% static 'style.css'%}" type="text/css" />
+  </head>
+  <body>
+    <form method='POST'>{% csrf_token %}
+      <input type='text' name='photo' placeholder='Enter a name' />
+      <button type='submit'> ENTER</button>
+    </form>  
+    <img src='https://source.unsplash.com/1600x900/?{{photo}}' alt='image' />
+    <h1>Hello!</h1>
+    <p>
+      This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.
+    </p>
+    <div class='container'>
+    <div class='random'>
+      <h4>FACT</h4>
+      <P> {{ fact}} </P>
+    </div>
+
+    <div class='random'>
+      <h4>BORED</h4>
+      <P> {{ activity}} </P>
+    </div>
+
+    <div class='random'>
+      <h4>DOGS</h4>
+      <img src='{{ dog }}' />'></img>
+    </div>
+    </div>  
+    
+  </body>
+</html>
