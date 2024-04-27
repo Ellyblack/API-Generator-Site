@@ -7,9 +7,9 @@ def index(request):
   res1 = r1.json()
   fact = res1['text']
 
-  r2 = requests.get('https://www.boredapi.com/api/activity')
+  r2 = requests.get('https://api.adviceslip.com/advice')
   res2 = r2.json()
-  activity = res2['activity']
+  advice = res2['slip']
 
   r3 = requests.get('https://dog.ceo/api/breeds/image/random')
   res3 = r3.json()
@@ -22,7 +22,7 @@ def index(request):
 
   return render(request, 'templates/index.html', {
       'fact': fact,
-      'activity': activity,
+      'slip': advice,
       'dog': dog,
       'photo': photo
   })

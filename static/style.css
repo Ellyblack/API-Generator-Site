@@ -1,20 +1,20 @@
 body{
-  background-color: #003C43;
-  color: #77B0AA;
+  background-color: #1A120B;
+  color: #D5CEA3;
   font-family: sans-serif;
   font-size: 1.1em;
   line-height: 1.5;
   text-align: center;
 }
 input, button{
-  padding: .4em, .5em;
-  border: 1px solid #E3FEF7;
-  border-radius: 25px;
+  padding: .4em, .7em;
+  border: 3px solid #1A120B;
+  border-radius: 50px;
   margin-bottom: 1rem;
 }
 button{
-  background-color: #E3FEF7;
-  color: #135D66;
+  background-color: #D5CEA3;
+  color: #3C2A21;
   font-weight: bold;
   padding: .4em 1em;
   cursor: pointer;
@@ -32,8 +32,8 @@ img{
 }
 .random{
   width: 20rem;
-  border: 2px solid #135D66;
+  border: 2px solid #D5CEA3;
   border-radius: 10px;
   padding: 1rem;
-  background-color:#E3FEF7;
+  background-color:#E5E5CB;
 }
